@@ -261,7 +261,6 @@
   margin-top: 68px;
   margin: auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px 40px;
@@ -323,12 +322,16 @@
 .membership__steps {
   list-style-type: none;
   padding: 0;
-  margin: 100px 0 0;
+  margin: 100px 200px;
+  display: flex;
+  gap: 40px;
+
   /* Agrega estilos */
 }
 
 .step {
   /* Agrega estilos */
+  flex-basis: 230px;
 }
 
 .step__title {
