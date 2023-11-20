@@ -332,6 +332,8 @@
 .step {
   /* Agrega estilos */
   flex-basis: 230px;
+  margin: auto;
+  font-size: 18px;
 }
 
 .step__title {
@@ -365,7 +367,11 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 500;
-  z-index: 1;
+  z-index: 2;
+  position: relative;
+  max-width: 165px;
+  text-align: center;
+  top: 50px;
 }
 
 .about__content {
@@ -373,6 +379,18 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  margin-left: 250px;
+  position: relative;
+  z-index: 2;
+}
+
+.about__paragraph {
+  font-size: 18px;
+  width: 565px;
+}
+
+.about__content p:nth-of-type(n):not(:last-of-type) {
+  margin-bottom: 32px;
 }
 
 .about__circle {
@@ -380,6 +398,10 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
