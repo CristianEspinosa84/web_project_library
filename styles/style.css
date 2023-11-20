@@ -47,6 +47,10 @@
   font-weight: bold;
 }
 
+.nav__link:hover {
+  color: #1f69c9;
+}
+
 .header__title {
   max-width: 601px;
   margin-top: 128px;
@@ -82,6 +86,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1f69c9;
 }
 
 .header__address {
@@ -157,6 +165,10 @@
 .events__more {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.events__more:hover {
+  color: #1f69c9;
 }
 
 .events__cover {
@@ -244,6 +256,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: #fff;
 }
 
 .staff__subtitle {
@@ -251,7 +264,8 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  margin: 0;
+  margin: 68px;
+  color: #fff;
 }
 
 /* Agrega la regla CSS para tu nueva clase aquí. Asegúrate de colocarlo antes de .card:, los padres deben preceder a sus hijos */
@@ -406,18 +420,32 @@
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding: 60px 80px;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .footer__column_content_hours {
+  margin: 0 auto;
+  margin-right: 100px;
 }
 
 .footer__column_content_social {
 }
 
 .footer__logo {
+  width: 57px;
+  height: 80px;
+  margin-bottom: 108px;
 }
 
 .footer__list {
@@ -428,9 +456,11 @@
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
 }
 
 .footer__column-heading {
+  margin-bottom: 20px;
 }
 
 .footer__column-link {
@@ -438,10 +468,26 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer__column-link:hover {
+  color: #c1c1c1;
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
 }
 
 .footer__copyright {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 170px;
+  font-size: 16px;
+  line-height: 20px;
 }

@@ -22,19 +22,21 @@
           <!-- Se supone que poner enlaces de navegación en una lista es la mejor práctica para escribir el código semántico, ya que permite a los lectores de pantalla hacer una pausa entre cada enlace en lugar de leer todos los enlaces como una oración. -->
           <ul class="nav__links">
             <li>
-              <a class="nav__link">Eventos</a>
+              <a href="#eventos" class="nav__link">Eventos</a>
             </li>
             <li>
-              <a class="nav__link">Preferidos de nuestro staff</a>
+              <a href="#staff-favoritos" class="nav__link"
+                >Preferidos de nuestro staff</a
+              >
             </li>
             <li>
-              <a class="nav__link">Hazte miembro</a>
+              <a href="#hazte-miembro" class="nav__link">Hazte miembro</a>
             </li>
             <li>
-              <a class="nav__link">Sobre nosotros</a>
+              <a href="#sobre-nosotros" class="nav__link">Sobre nosotros</a>
             </li>
             <li>
-              <a class="nav__link">Contactos</a>
+              <a href="#contactos" class="nav__link">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -57,14 +59,16 @@
         />
 
         <div class="header__footer">
-          <a class="header__link">Sobre la librería &darr;</a>
+          <a href="#sobre-nosotros" class="header__link"
+            >Sobre la librería &darr;</a
+          >
           <p class="header__address">
             Avenida del Éxito 200, Ciudad Triple Peaks
           </p>
         </div>
       </header>
       <main class="content">
-        <section class="events">
+        <section id="eventos" class="events">
           <!-- --------------------------------------------------------------- -->
           <!--    No descomentar hasta la etapa 2 del proyecto.      -->
           <!-- --------------------------------------------------------------- -->
@@ -154,7 +158,7 @@
           </div>
         </section>
 
-        <section class="staff">
+        <section id="staff-favoritos" class="staff">
           <!-- --------------------------------------------------------------- -->
           <!--   No descomentar hasta la etapa final del proyecto.         -->
           <!-- --------------------------------------------------------------- -->
@@ -234,7 +238,7 @@
           </ul>
         </section>
 
-        <section class="membership">
+        <section id="hazte-miembro" class="membership">
           <!-- --------------------------------------------------------------- -->
           <!--   No descomentar hasta la etapa final del proyecto.         -->
           <!-- --------------------------------------------------------------- -->
@@ -295,7 +299,7 @@
           </ul>
         </section>
 
-        <section class="about">
+        <section id="sobre-nosotros" class="about">
           <!-- --------------------------------------------------------------- -->
           <!--      No descomentar hasta la etapa final del proyecto.      -->
           <!-- --------------------------------------------------------------- -->
@@ -323,13 +327,17 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer id="contactos" class="footer">
         <!-- ----------------------------------------------------------------- -->
         <!--      No descomentar hasta la etapa final del proyecto.        -->
         <!-- ----------------------------------------------------------------- -->
         <div class="footer__columns">
           <div class="footer__column">
-            <img src="./images/logo.svg" alt="logotipo" class="footer__logo" />
+            <img
+              src="./images/logo-white.svg"
+              alt="logotipo"
+              class="footer__logo"
+            />
           </div>
           <div class="footer__column_content_hours">
             <h3 class="footer__column-heading">Horas</h3>
@@ -342,13 +350,30 @@
               </li>
             </ul>
           </div>
-          <div class="footer__column_content__solcial">
+          <div class="footer__column_content_solcial">
             <h3 class="footer__column-heading">Redes Sociales</h3>
             <ul class="footer__list">
-              <a href="#">Facebook</a>
-              <a href="#">Instagram</a>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    src="./images/facebook_white.svg"
+                    alt="log facebook"
+                    class="footer__social-icon"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__column-link">
+                  <img
+                    src="./images/instagram_white.svg"
+                    alt="log instagram"
+                    class="footer__social-icon"
+                  />Instagram</a
+                >
+              </li>
             </ul>
           </div>
+          <h4 class="footer__copyright">© 2023 Cristian Espinosa</h4>
         </div>
       </footer>
     </div>
